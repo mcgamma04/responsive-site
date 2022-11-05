@@ -1,0 +1,205 @@
+.banner {
+    display: flex;
+    padding: 0px 50px;
+    margin: 70px 0;
+    align-items: center;
+}
+
+.banner-image {
+    width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+    border-radius: 20px;
+    /* object-fit: cover; */
+
+}
+
+.banner .text {
+    width: 50%;
+}
+
+.banner .text h1 {
+    font-size: 55px;
+}
+
+.banner .text p {
+    padding-right: 30px;
+}
+
+.banner .text h1 span {
+    color: purple;
+}
+
+.banner .text form {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+
+}
+
+.banner .text form input {
+    width: 350px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+
+.banner .text form button {
+    border: none;
+    padding: 13px 25px;
+    color: white;
+    background-color: rgb(128, 0, 128);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+}
+
+.banner .text form button:hover {
+    /* background-color: rgb(59, 0, 59); */
+    background-color: white;
+    color: black;
+}
+
+.service-section {
+    margin: 100px 0px;
+}
+
+.service-section .heading {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.service-section .service-container {
+    margin-top: 50px;
+}
+
+
+.service-section .service-container .service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.service-section .service-container .service-card img {
+    width: 550px;
+    border-radius: 20px;
+}
+
+.service-section .service-container .service-card .text {
+    max-width: 600px;
+}
+
+.service-section .service-container .service-card .text p {
+    margin-top: 15px;
+}
+
+.service-section .service-container .service-card:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:1250px) {
+    .banner{
+        gap: 50px;
+    }
+
+    .banner .text h1 {
+        font-size: 45px;
+    }
+
+    .banner-image {
+        width: 45%;
+    }
+
+    .service-section .heading {
+        font-size: 30px;
+    }
+
+    .service-section .service-container .service-card img{
+        width: 400px;
+    }
+
+    .service-section .service-container .service-card{
+        gap: 25px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .banner .text h1 {
+        font-size: 40px;
+    }
+
+    .banner .text form input{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:899px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner .text {
+        width: 95%;
+        text-align: center;
+    }
+    .banner .text form{
+        width: max-content;
+        margin: 30px auto;
+    }
+
+    .banner-image {
+        width: 90%;
+    }
+
+    .service-section .service-container .service-card img{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:730px){
+    .service-section .service-container .service-card{
+        flex-direction: column !important;
+    }
+
+    .service-section .service-container .service-card .text{
+        text-align: center;
+    }
+
+    .service-section .service-container .service-card{
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width:530px){
+    .banner .text h1 {
+        font-size: 32px;
+    }
+
+    .banner{
+        padding: 0px 10px;
+    }
+
+    .banner .text form input{
+        max-width: 230px;
+        max-width: 50vw;
+    }
+
+    .service-section .heading {
+        font-size: 25px;
+    }
+
+    .service-section .service-container .service-card .text h2 {
+        font-size: 18px;
+     }
+
+    .service-section .service-container .service-card .text p {
+       font-size: 15px;
+    }
+}
